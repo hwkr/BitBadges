@@ -6,9 +6,8 @@ module.exports = function(grunt) {
     svgmin: {
         dist: {
             cwd: 'svg',
-            src: "**/*.svg",
-            dest: "dist/",
-            ext: ".min.svg",
+            src: ["*.svg","!template.svg"],
+            dest: "svg/",
             expand: true
         }
     }
